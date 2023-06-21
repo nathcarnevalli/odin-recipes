@@ -1,6 +1,6 @@
 # Odin Recipes
 
-This project is a recipe page and it shows some summer special ice creams recipes.
+This project is a recipe page and it only shows some summer special ice creams recipes.
 
 live link: https://nathcarnevalli.github.io/odin-recipes/index.html
 
