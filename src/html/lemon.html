@@ -4,31 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ice Cream</title>
+  <link rel="icon" type="image/x-icon" href="../images/spoon.svg">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Super Lemon Ice Cream</title>
 </head>
 <body>
-  <h1>Odin Recipes</h1>
-  <h2>Super Lemon Ice Cream</h2>
-  <img src="https://www.allrecipes.com/thmb/uThjUWM5emUvWyYYSZk38aGzqk4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1586127-a037adae316c4a259f34c338c0427045.jpg" alt="lemon ice cream"/>
-  <p>
-    This lemon ice cream is tart, tangy, and very refreshing in the summer!
-  </p>
-  <h3>Ingredients</h3>
-  <ul>
-    <li>2 cups heavy whipping cream</li>
-    <li>1 ⅛ cups white sugar</li>
-    <li>1 cup half-and-half cream</li>
-    <li>3 tablespoons grated lemon zest</li>
-    <li>5 large egg yolks</li>
-    <li>¾ cup fresh lemon juice</li>
-    <li>2 drops red food coloring (Optional)</li>
-  </ul>
-  <h3>Recipe instruction</h3>
-  <ol>
-    <li>Combine heavy cream, sugar, half-and-half, and lemon zest in a saucepan; bring to a simmer over low heat. Cook and stir until sugar is dissolved, about 5 minutes. Remove from heat, cover the saucepan, and allow to steep for 10 minutes.</li>
-    <li>Uncover the saucepan and bring back to a simmer over low heat. Beat egg yolks in a medium bowl. Gradually whisk 1 cup hot cream mixture into eggs, several tablespoons at a time. (This brings eggs up to temperature without scrambling them.) Stir egg mixture back into cream mixture in the saucepan. Cook and stir over low heat until mixture coats the back of a spoon, 5 to 10 minutes. Transfer to a large bowl; cover and refrigerate 8 hours to overnight.</li>
-    <li>Stir lemon juice into chiled ice cream mixture. Freeze in a 4- to 5-quart ice cream maker according to manufacturer's directions. Transfer ice cream to a lidded freezer container, then freeze for about 4 hours to ripen flavors before serving.</li>
-  </ol>
-  <a href="../index.html">Go back to the main page</a>
+  <header class="p-8 shadow-lg ">
+    <div class="w-3/5 m-auto flex items-center justify-between">
+      <a href="../../index.html" class="flex items-center">
+        <h1 class="text-center inline-block text-red-500 text-5xl font-bold">Odin Recipes</h1>
+        <img src="../images/spoon.svg" alt="spoon">
+      </a>
+      <nav>
+        <ul class="flex gap-6 text-xl uppercase font-bold">
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Kitchen tips</a></li> 
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">News</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Features</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="pb-20">
+    <div class="w-3/5 m-auto mt-36">
+      <div class="flex justify-between mt-36 mb-7 gap-x-14">
+      <img class="w-full" src="https://www.allrecipes.com/thmb/uThjUWM5emUvWyYYSZk38aGzqk4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1586127-a037adae316c4a259f34c338c0427045.jpg" alt="cherry ice cream" alt="icecream"/>
+      <div class="bg-yellow-50 p-10 self-start text-justify">
+        <h3 class="text-3xl font-bold text-center mb-6">News & Trending</h3>
+        <ul class="font-semibold text-xl flex flex-col gap-7">
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">This Beloved Popeyes Chicken Sandwich Is Back on the Menu for Good</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Pop-Tarts Just Released Its Most Nostalgic Product Yet</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Costco's Bakery Just Brought Back a Beloved Summer Pie</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Cheerios Has Officially Discontinued "The Best" Cereal Flavor</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="uppercase text-sm font-bold text-gray-500 pb-2">Ice Creams</p>
+      <h2 class="text-4xl font-bold mb-6 hover:underline underline-offset-8 hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer">Super Lemon Ice Cream</h2>
+      <p class="text-xl text-justify pb-20">This lemon ice cream is tart, tangy, and very refreshing in the summer!
+      </p>
+      <div class="grid grid-cols-2 gap-6 mb-20">     
+        <div>
+            <div class="flex gap-3 items-center justify-center pb-10">
+              <h3 class="underline-offset-8 text-4xl font-bold  hover:underline hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer">Ingredients</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="red" class="w-10">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>          
+            </div>
+            <ul class="text-3xl list-disc bg-yellow-50 py-10 pl-14 pr-10 marker:text-orange-400 h-full">
+              <li class="pb-4">2 cups heavy whipping cream</li>
+              <li class="pb-4">1 ⅛ cups white sugar</li>
+              <li class="pb-4">1 cup half-and-half cream</li>
+              <li class="pb-4">3 tablespoons grated lemon zest</li>
+              <li class="pb-4">5 large egg yolks</li>
+              <li class="pb-4">¾ cup fresh lemon juice</li>
+              <li class="pb-4">2 drops red food coloring (Optional)</li>
+            </ul>
+        </div>
+        <div>
+          <div class="flex gap-3 items-center justify-center pb-10">
+            <h3 class="underline-offset-8 text-4xl font-bold  hover:underline hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer">Recipe instruction</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="red" class="w-10">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>          
+          </div>
+          <ul class="text-3xl list-disc bg-yellow-50 py-10 pl-14 pr-10 marker:text-orange-400 h-full">
+            <li class="pb-4">Combine heavy cream, sugar, half-and-half, and lemon zest in a saucepan; bring to a simmer over low heat. Cook and stir until sugar is dissolved, about 5 minutes. Remove from heat, cover the saucepan, and allow to steep for 10 minutes.</li>
+            <li class="pb-4">Uncover the saucepan and bring back to a simmer over low heat. Beat egg yolks in a medium bowl. Gradually whisk 1 cup hot cream mixture into eggs, several tablespoons at a time. (This brings eggs up to temperature without scrambling them.) Stir egg mixture back into cream mixture in the saucepan. Cook and stir over low heat until mixture coats the back of a spoon, 5 to 10 minutes. Transfer to a large bowl; cover and refrigerate 8 hours to overnight.</li>
+            <li class="pb-4">Stir lemon juice into chiled ice cream mixture. Freeze in a 4- to 5-quart ice cream maker according to manufacturer's directions. Transfer ice cream to a lidded freezer container, then freeze for about 4 hours to ripen flavors before serving.</li>
+          </ul>
+      </div>
+      </div>
+    </div>
+  </main>
+  <footer class="p-20 flex items-center justify-center bg-gray-200 gap-3">
+    <h2 class="text-center text-3xl font-bold text-red-500">Odin Recipes</h2>
+    <span class="text-xl"> - by nathcarnevalli</span>
+  </footer>
 </body>
 </html>
