@@ -4,19 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="src/images/spoon.svg">
   <title>Odin Recipes</title>
 </head>
 <body>
-  <h1 id="top">Odin Recipes</h1>
-  <h2>3 Ice Cream Treats You'll Want to Make All Summer Long</h2>
-  <img src="https://www.allrecipes.com/thmb/mb3mEIfwofkYBcASexmxJvXbdWI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/9239545-banana-split-ice-cream-pie-photo-by-meredith-food-studios-1d1444e99410421390554e952b186be8.jpg" alt="icecream"/>
-  <p>Everyone knows there's nothing better than ice cream on a hot summer's day. So, as summer heats up, you'll want to cool down with these delicious ice cream treats — from ice cream cakes and ice cream pies to the tastiest homemade ice cream. Scroll through to find the frosty ice cream desserts that are so delicious you'll want to make them all summer long.
-  </p>
-  <ol>
-    <li><a href="recipes/cherry.html">Cherry Ice Cream</a></li>
-    <li><a href="recipes/strawberry.html">Easy, Eggless Strawberry Ice Cream</a></li>
-    <li><a href="recipes/lemon.html">Super Lemon Ice Cream</a></li>
-  </ol>
-  <a href="#top">Go to the top</a>
+  <header class="p-8 shadow-lg ">
+    <div class="w-3/5 m-auto flex items-center justify-between">
+      <div class="flex items-center">
+        <h1 class="text-center inline-block text-red-500 text-5xl font-bold">Odin Recipes</h1>
+        <img src="./src/images/spoon.svg" alt="spoon">
+      </div>
+      <nav>
+        <ul class="flex gap-6 text-xl uppercase font-bold">
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Kitchen tips</a></li> 
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">News</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Features</a></li>
+          <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="pb-20">
+    <div class="w-3/5 m-auto">
+      <div class="flex justify-between mt-36 mb-7 gap-x-14">
+        <img class="w-full" src="https://www.allrecipes.com/thmb/mb3mEIfwofkYBcASexmxJvXbdWI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/9239545-banana-split-ice-cream-pie-photo-by-meredith-food-studios-1d1444e99410421390554e952b186be8.jpg" alt="icecream"/>
+        <div class="bg-yellow-100 p-10 self-start text-justify">
+          <h3 class="text-3xl font-bold text-center mb-6">News & Trending</h3>
+          <ul class="font-semibold text-xl flex flex-col gap-7">
+            <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">This Beloved Popeyes Chicken Sandwich Is Back on the Menu for Good</a></li>
+            <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Pop-Tarts Just Released Its Most Nostalgic Product Yet</a></li>
+            <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Costco's Bakery Just Brought Back a Beloved Summer Pie</a></li>
+            <li class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-3"><a href="#">Cheerios Has Officially Discontinued "The Best" Cereal Flavor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="uppercase text-sm font-bold text-gray-500 pb-2">Ice creams</p>
+        <h2 class="text-4xl font-bold mb-6 hover:underline underline-offset-8 hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer">3 Ice Cream Treats You'll Want to Make All Summer Long</h2>
+        <p class="text-xl text-justify pb-20">Everyone knows there's nothing better than ice cream on a hot summer's day. So, as summer heats up, you'll want to cool down with these delicious ice cream treats — from ice cream cakes and ice cream pies to the tastiest homemade ice cream. Scroll through to find the frosty ice cream desserts that are so delicious you'll want to make them all summer long.
+        </p>
+      </div>
+      <div>
+        <div class="flex gap-3 items-center justify-center pb-10">
+          <h3 class="underline-offset-8 text-4xl font-bold  hover:underline hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer">Ice Cream Day</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="red" class="w-10">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>          
+        </div>
+        <ol class="flex items-center justify-center gap-10">
+          <a href="./src/html/cherry.html"><li><div class="w-96 h-72 bg-no-repeat bg-cover" style="background-image: url('https://www.allrecipes.com/thmb/9Pf5-IzPW-UbEftW48RB-HT8QIE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/109096-Cherry-Ice-Cream-mauigirl_831252_original-4x3-1-8c0db9348c0a42408d1335432a16832f.jpg');"></div><div class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer text-2xl font-semibold text-center my-5">Cherry Ice Cream</div></li></a> 
+          <a href="./src/html/cherry.html"><li><div class="w-96 h-72 bg-no-repeat bg-cover" style="background-image: url('https://www.allrecipes.com/thmb/EwaCH1PTxl2VZovGgw1A1n1g1Eo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/140877-easy-eggless-strawberry-ice-cream-ddmfs-3x4-1-092e4d11b59049c8b3843014ea3c57f2.jpg');"></div><div class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer text-2xl font-semibold text-center my-5">Strawberry Ice Cream</div></li></a> 
+          <a href="./src/html/cherry.html"><li><div class="w-96 h-72 bg-no-repeat bg-cover" style="background-image: url('https://www.allrecipes.com/thmb/uThjUWM5emUvWyYYSZk38aGzqk4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1586127-a037adae316c4a259f34c338c0427045.jpg');"></div><div class="underline-offset-8 hover:underline hover:decoration-red-600 hover:decoration-2 hover:cursor-pointer text-2xl font-semibold text-center my-5">Lemon Ice Cream</div></li></a> 
+        </ol>
+      </div>
+    </div>
+  </main>
+  <footer class="p-20 flex items-center justify-center bg-gray-200 gap-3">
+    <h2 class="text-center text-3xl font-bold text-red-500">Odin Recipes</h2>
+    <span class="text-xl"> - by nathcarnevalli</span>
+  </footer>
 </body>
 </html>
